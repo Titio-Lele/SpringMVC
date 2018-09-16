@@ -18,4 +18,10 @@ public class PizzaController {
 	public String Hello (@PathVariable String nome) {
 		return "Olá! " + nome; 
 	}
+	
+	@RequestMapping("/pedidos")
+	@ResponseBody
+	public String requiem() {
+		return "<h1> Bem vindo aos pedidos</h1>";
+	}
 }
